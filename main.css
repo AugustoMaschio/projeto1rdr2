@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #020202;
+    padding: 0 20px;
+    height: 90px;
+    color: #fff;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bt-compreja {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #ff4b5c;
+    transition: all 0.3s ease;
+}
+
+.bt-compreja:hover {
+    background-color: #ff4b5c;
+}
+
+/* imagem de capa*/
+.capa {
+    height: 100vh;
+    background-image: url('./Imagens/RDR2\ Capa.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* História (texto centralizado) */
+.history {
+    padding: 50px;
+    text-align: center;
+    padding: 20px 300px;
+}
+
+.history p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Explorar */
+#explore {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links {
+    text-align: center;
+    width: 22%;
+    transition: all 0.3s ease;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-links img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.linktitle h3 {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-links:hover img {
+    transform: scale(1.1);
+}
+
+.social-links:hover .linktitle h3 {
+    color: #ffd700;
+}
+
+@media (max-width: 1024px) {
+    .social-links {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        width: calc(50% - 20px); /* Dois itens por linha em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .social-links {
+        width: 100%; /* Um item por linha em telas muito pequenas */
+    }
+}
+
+/* Contato */
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section .container {
+    align-items: center;
+}
+
+form button {
+    background-color: #ff4b5c;
+    color: #020202;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
