@@ -102,17 +102,22 @@ header .container {
 }
 
 .social-links img {
+    border: 5px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
+    margin-bottom: 18px;
     transition: transform 0.3s ease;
 }
 
 .linktitle h3 {
     margin-top: 10px;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.8em;
     transition: color 0.3s ease;
 }
 
@@ -122,6 +127,7 @@ header .container {
 
 .social-links:hover .linktitle h3 {
     color: #ffd700;
+    transform: scale(1.1);
 }
 
 @media (max-width: 1024px) {
@@ -143,6 +149,37 @@ header .container {
 }
 
 /* Contato */
+.contact-methods {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+#contact .container h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #ff4b5c;
+}
+
+#contact .container h3 {
+    margin-bottom: 15px;
+}
+
+.links-rsocial li {
+    align-items: center;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.links-rsocial li a {
+    text-decoration: none;
+}
+
+.links-rsocial img {
+    height: 50px;
+    width: auto;
+}
+
 form input,
 form textarea,
 form button {
@@ -173,4 +210,11 @@ form button {
 form button:hover {
     background-color: #ff0000;
     color: #fff;
+}
+
+/* Rodapé */
+footer p {
+    height: 30px;
+    
+    margin-left: 40%;
 }
