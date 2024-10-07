@@ -166,7 +166,6 @@ header .container {
 }
 
 .links-rsocial li {
-    align-items: center;
     display: block;
     margin-bottom: 15px;
 }
@@ -178,6 +177,10 @@ header .container {
 .links-rsocial img {
     height: 50px;
     width: auto;
+}
+
+.links-rsocial img:hover {
+    transform: scale(1.1);
 }
 
 form input,
